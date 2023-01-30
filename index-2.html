@@ -11,6 +11,51 @@
     <link rel="icon" href="assets/img/favicon.png" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/button.min.css" />
+
+    <style>
+      .tint {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+          url("./assets/img/banner/1.jpg") 50% / cover fixed;
+        height: 600px;
+        padding: 1.5em;
+      }
+      .tint-div {
+        position: absolute;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+      }
+      .tint-text {
+        color: #fff;
+        font-size: 65.03px;
+        line-height: 81.29px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+      }
+      .tint-text span {
+        display: inline-block;
+        color: #f37335;
+        position: relative;
+      }
+      .tint-sub-text {
+        color: #fff;
+        font-size: 20px;
+      }
+      .img-fit{
+        aspect-ratio: 3/3;
+        object-fit: contain;
+      }
+      .teacher{
+        transition: all .3s;
+      }
+      .teacher:hover{
+        transform: scale(1.1);
+        transition: all .3s;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -77,54 +122,32 @@
                   </li>
                   <li>
                     <a href="about.html" title="">About</a>
-                    <!-- <ul>
-                      <li>
-                        <a href="event-single.html" title="">Event Single</a>
-                      </li>
-                      <li><a href="schedule.html" title="">Schedule</a></li>
-                      <li><a href="error.html" title="">404</a></li>
-                    </ul> -->
                   </li>
                   <li>
-                    <a href="events.html" title="">Events</a>
+                    <a href="about.html" title="">Events</a>
                   </li>
                   <li>
+                    <a href="admission.html" title="">Admissions</a>
+                  </li>
+                  <!-- <li>
                     <a href="classes.html" title="">Classes</a>
-                    <!-- <ul>
-                      <li>
-                        <a href="class-single.html" title="">Class Single</a>
-                      </li>
-                    </ul> -->
-                  </li>
-                  <li>
+                  </li> -->
+                  <!-- <li>
                     <a href="teachers.html" title="">Teachers</a>
-                    <!-- <ul>
-                      <li<>
-                        <a href="teacher-single.html" title=""
-                          >Teacher Single</a
-                        >
-                      </li>
-                    </ul> -->
-                  </li>
-                  <li>
+                  </li> -->
+                  <!-- <li>
                     <a href="blog.html" title="">Blog</a>
-                    <!-- <ul>
-                        <li><a href="post.html" title="">Blog Single</a></li>
-                      </ul> -->
-                  </li>
+                  </li> -->
                   <li><a href="contacts.html" title="">Contacts</a></li>
                 </ul>
               </nav>
               <!--nav end-->
               <ul class="social-links ml-auto">
                 <li>
-                  <a href="#" title=""><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.facebook.com/TheHoraizons" target="_blank" title=""><i class="fab fa-facebook-f"></i></a>
                 </li>
                 <li>
-                  <a href="#" title=""><i class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                  <a href="#" title=""><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.youtube.com/@TheHoraizons/videos" target="_blank" title=""><i class="fab fa-youtube"></i></a>
                 </li>
               </ul>
             </div>
@@ -136,19 +159,39 @@
           <ul>
             <li><a href="index-2.html" title="">Home</a></li>
             <li><a href="about.html" title="">About</a></li>
-            <li><a href="events.html" title="">Events</a></li>
-            <li><a href="event-single.html" title="">Event Single</a></li>
+            <li><a href="about.html" title="">Events</a></li>
+            <li>
+              <a href="admission.html" title="">Admissions</a>
+            </li>
+            <!-- <li><a href="event-single.html" title="">Event Single</a></li>
             <li><a href="schedule.html" title="">Schedule</a></li>
             <li><a href="classes.html" title="">Classes</a></li>
-            <li><a href="class-single.html" title="">Classe Single</a></li>
-            <li><a href="teachers.html" title="">Teachers</a></li>
-            <li><a href="teacher-single.html" title="">Teacher Single</a></li>
-            <li><a href="blog.html" title="">Blog</a></li>
-            <li><a href="post.html" title="">Blog Single</a></li>
+            <li><a href="class-single.html" title="">Classe Single</a></li> -->
+            <!-- <li><a href="teachers.html" title="">Teachers</a></li> -->
+            <!-- <li><a href="teacher-single.html" title="">Teacher Single</a></li> -->
+            <!-- <li><a href="blog.html" title="">Blog</a></li>
+            <li><a href="post.html" title="">Blog Single</a></li> -->
             <li><a href="contacts.html" title="">Contacts</a></li>
-            <li><a href="error.html" title="">404</a></li>
+            <!-- <li><a href="error.html" title="">404</a></li> -->
           </ul>
         </div>
+
+        <!-- Banner -->
+        <div class="tint">
+          <div class="tint-div">
+            <h2 class="tint-text">The <span>Horaizon</span> School</h2>
+            <p class="tint-sub-text">Education Needs Complete Solution</p>
+            <a
+              style="margin-top: 25px"
+              href="contacts.html"
+              title=""
+              class="btn-default"
+              >Join Us <i class="fa fa-long-arrow-alt-right"></i
+            ></a>
+          </div>
+        </div>
+        <!-- Banner -->
+
         <!--responsive-menu end-->
         <section class="main-banner">
           <div class="container">
@@ -159,26 +202,26 @@
                   data-wow-duration="1000ms"
                 >
                   <h2>The <span>Horaizon</span> School</h2>
-                  <!-- <p>
+                  <p>
                     Mauris malesuada enim eget blandit gravida. Duis hendrerit
                     cursus turpis, id mollis est rutrum nec. Sed interdum nisi
                     id libero tincidunt, sit amet vestibulum tortor porttitor.
                     Cras ligula lacus, ullamcorper sed
-                  </p> -->
-                  <form class="search-form">
+                  </p>
+                  <!-- <form class="search-form">
                     <input
                       type="text"
                       name="search"
                       placeholder="Search Class"
                     />
                     <button><i class="fa fa-search"></i></button>
-                  </form>
+                  </form> -->
                   <a
                     style="margin-top: 25px"
-                    href="contacts.html"
+                    href="about.html"
                     title=""
                     class="btn-default"
-                    >Join Us <i class="fa fa-long-arrow-alt-right"></i
+                    >Know More <i class="fa fa-long-arrow-alt-right"></i
                   ></a>
                 </div>
               </div>
@@ -203,6 +246,11 @@
         <!-- <h2 class="main-title">Shelly</h2> -->
       </div>
       <!--main-section end-->
+
+      <!-- intro -->
+
+      <!-- intro -->
+
       <section class="about-us-section">
         <div class="container">
           <div class="section-title text-center">
@@ -423,11 +471,20 @@
           </div>
         </div>
       </section>
+
+      <!-- Video Section -->
+      <!-- <video autoplay loop muted>
+        <source src="./assets/img/video/video_1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video> -->
+
+      <!-- Video Section -->
+
       <!--about-us-section end-->
       <section class="classes-section">
         <div class="container">
           <div class="sec-title">
-            <h2>Our Classes</h2>
+            <h2>Achievement & Features</h2>
             <p>
               Nam mattis felis id sodales rutrum. Nulla ornare tristique mauris,
               a laoreet erat ornare sit amet. Nulla sagittis faucibus lacus
@@ -661,8 +718,8 @@
               </div>
             </div>
             <div class="lnk-dv text-center">
-              <a href="classes.html" title="" class="btn-default"
-                >Classes <i class="fa fa-long-arrow-alt-right"></i
+              <a href="about.html" title="" class="btn-default"
+                >Know More <i class="fa fa-long-arrow-alt-right"></i
               ></a>
             </div>
           </div>
@@ -673,7 +730,7 @@
       <section class="teachers-section">
         <div class="container">
           <div class="section-title text-center">
-            <h2>Our Awesome<br />Teachers</h2>
+            <h2>Our Awesome<br />Teachers & Staff</h2>
             <p>
               Quisque id ultrices tellus, ac sodales ex. Cras nec ante viverra,
               bibendum justo eget, lacinia dui. Donec ligula ligula, elementum
@@ -686,27 +743,8 @@
               <div class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth">
                 <div class="teacher">
                   <div class="teacher-img">
-                    <img src="assets/img/img5.jpg" alt="" class="w-100" />
-                    <div class="sc-div">
-                      <ul>
-                        <li>
-                          <a href="#" title=""
-                            ><i class="fab fa-instagram"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="#" title=""
-                            ><i class="fab fa-linkedin-in"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="#" title=""
-                            ><i class="fab fa-facebook-f"></i
-                          ></a>
-                        </li>
-                      </ul>
-                      <span><img src="assets/img/plus.png" alt="" /></span>
-                    </div>
+                    <img src="./assets/img/teachers/teach1.png" alt="" class="w-100 img-fit" />
+                    
                   </div>
                   <div class="teacher-info">
                     <h3>
@@ -720,27 +758,8 @@
               <div class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth">
                 <div class="teacher">
                   <div class="teacher-img">
-                    <img src="assets/img/img6.jpg" alt="" class="w-100" />
-                    <div class="sc-div">
-                      <ul>
-                        <li>
-                          <a href="#" title=""
-                            ><i class="fab fa-instagram"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="#" title=""
-                            ><i class="fab fa-linkedin-in"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="#" title=""
-                            ><i class="fab fa-facebook-f"></i
-                          ></a>
-                        </li>
-                      </ul>
-                      <span><img src="assets/img/plus.png" alt="" /></span>
-                    </div>
+                    <img src="./assets/img/teachers/teach2.png" alt="" class="w-100 img-fit" />
+                    
                   </div>
                   <div class="teacher-info">
                     <h3>
@@ -754,27 +773,8 @@
               <div class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth">
                 <div class="teacher">
                   <div class="teacher-img">
-                    <img src="assets/img/img7.jpg" alt="" class="w-100" />
-                    <div class="sc-div">
-                      <ul>
-                        <li>
-                          <a href="#" title=""
-                            ><i class="fab fa-instagram"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="#" title=""
-                            ><i class="fab fa-linkedin-in"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="#" title=""
-                            ><i class="fab fa-facebook-f"></i
-                          ></a>
-                        </li>
-                      </ul>
-                      <span><img src="assets/img/plus.png" alt="" /></span>
-                    </div>
+                    <img src="./assets/img/teachers/teach3.png" alt="" class="w-100 img-fit" />
+                    
                   </div>
                   <div class="teacher-info">
                     <h3>
@@ -788,27 +788,8 @@
               <div class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth">
                 <div class="teacher">
                   <div class="teacher-img">
-                    <img src="assets/img/img8.jpg" alt="" class="w-100" />
-                    <div class="sc-div">
-                      <ul>
-                        <li>
-                          <a href="#" title=""
-                            ><i class="fab fa-instagram"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="#" title=""
-                            ><i class="fab fa-linkedin-in"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="#" title=""
-                            ><i class="fab fa-facebook-f"></i
-                          ></a>
-                        </li>
-                      </ul>
-                      <span><img src="assets/img/plus.png" alt="" /></span>
-                    </div>
+                    <img src="./assets/img/teachers/teach4.png" alt="" class="w-100 img-fit" />
+                    
                   </div>
                   <div class="teacher-info">
                     <h3>
@@ -818,10 +799,15 @@
                   </div>
                 </div>
                 <!--teacher end-->
+                
               </div>
+              
             </div>
           </div>
           <!--teachers end-->
+          <div class="lnk-dv text-center">
+            <a href="about.html" title="" class="btn-default">Know More <i class="fa fa-long-arrow-alt-right"></i></a>
+          </div>
         </div>
       </section>
       <section class="course-section">
@@ -945,7 +931,7 @@
                 <!--course-card end-->
               </div>
               <!--courses-list end-->
-              <a href="events.html" title="" class="all-btn"
+              <a href="about.html" title="" class="all-btn"
                 >All Events <i class="fa fa-long-arrow-alt-right"></i
               ></a>
               <div class="clearfix"></div>
@@ -1160,11 +1146,10 @@
                       <div class="contact-info">
                         <img src="assets/img/icon2.png" alt="" />
                         <div class="contact-tt">
-                          <h4>Work Time</h4>
+                          <h4>Office Time</h4>
                           <span>Mon - Fri 8 AM - 5 PM</span>
                         </div>
                       </div>
-                      <!--contact-info end-->
                     </li>
                     <li>
                       <div class="contact-info">
@@ -1185,13 +1170,10 @@
                   <h3 class="widget-title">Quick Links</h3>
                   <ul>
                     <li><a href="about.html" title="">About Us</a></li>
-                    <li><a href="classes.html" title="">Our Classes</a></li>
                     <li>
-                      <a href="teachers.html" title="">School Teachers</a>
+                      <a href="about.html" title="">School Teachers</a>
                     </li>
-                    <li><a href="events.html" title="">Recent Events</a></li>
-                    <li><a href="blog.html" title="">Our News</a></li>
-                    <li><a href="schedule.html" title="">Schedule</a></li>
+                    <li><a href="about.html" title="">Recent Events</a></li>
                   </ul>
                 </div>
                 <!--widget-links end-->
@@ -1202,18 +1184,15 @@
           <div class="bottom-footer">
             <div class="row align-items-center">
               <div class="col-lg-6 col-md-6 col-sm-6">
-                <p>© Copyrights 2022 The Horaizon School All rights reserved</p>
+                <p>© Copyrights 2023 The Horaizon School All rights reserved</p>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6">
                 <ul class="social-links">
                   <li>
-                    <a href="#" title=""><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/TheHoraizons" target="_blank" title=""><i class="fab fa-facebook-f"></i></a>
                   </li>
                   <li>
-                    <a href="#" title=""><i class="fab fa-linkedin-in"></i></a>
-                  </li>
-                  <li>
-                    <a href="#" title=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@TheHoraizons/videos" target="_blank" title=""><i class="fab fa-youtube"></i></a>
                   </li>
                 </ul>
               </div>

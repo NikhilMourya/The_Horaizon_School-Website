@@ -11,6 +11,20 @@
     <link rel="icon" href="assets/img/favicon.png" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/button.min.css" />
+
+    <style>
+      .img-fit {
+        aspect-ratio: 3/3;
+        object-fit: contain;
+      }
+      .teacher {
+        transition: all 0.3s;
+      }
+      .teacher:hover {
+        transform: scale(1.1);
+        transition: all 0.3s;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -41,7 +55,7 @@
                 <div class="contact-info">
                   <img src="assets/img/icon2.png" alt="" />
                   <div class="contact-tt">
-                    <h4>Work Time</h4>
+                    <h4>Office Time</h4>
                     <span>Mon - Fri 8 AM - 5 PM</span>
                   </div>
                 </div>
@@ -72,58 +86,36 @@
             <nav>
               <ul>
                 <li>
-                  <a class="active" href="index-2.html" title="">Home</a>
+                  <a href="index-2.html" title="">Home</a>
                 </li>
                 <li>
-                  <a href="about.html" title="">About</a>
-                  <!-- <ul>
-                    <li>
-                      <a href="event-single.html" title="">Event Single</a>
-                    </li>
-                    <li><a href="schedule.html" title="">Schedule</a></li>
-                    <li><a href="error.html" title="">404</a></li>
-                  </ul> -->
+                  <a class="active" href="about.html" title="">About</a>
                 </li>
                 <li>
-                  <a href="events.html" title="">Events</a>
+                  <a href="about.html" title="">Events</a>
                 </li>
                 <li>
+                  <a href="admission.html" title="">Admissions</a>
+                </li>
+                <!-- <li>
                   <a href="classes.html" title="">Classes</a>
-                  <!-- <ul>
-                    <li>
-                      <a href="class-single.html" title="">Class Single</a>
-                    </li>
-                  </ul> -->
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                   <a href="teachers.html" title="">Teachers</a>
-                  <!-- <ul>
-                    <li<>
-                      <a href="teacher-single.html" title=""
-                        >Teacher Single</a
-                      >
-                    </li>
-                  </ul> -->
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                   <a href="blog.html" title="">Blog</a>
-                    <!-- <ul>
-                      <li><a href="post.html" title="">Blog Single</a></li>
-                    </ul> -->
-                </li>
+                </li> -->
                 <li><a href="contacts.html" title="">Contacts</a></li>
               </ul>
             </nav>
             <!--nav end-->
             <ul class="social-links ml-auto">
               <li>
-                <a href="#" title=""><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/TheHoraizons" target="_blank" title=""><i class="fab fa-facebook-f"></i></a>
               </li>
               <li>
-                <a href="#" title=""><i class="fab fa-linkedin-in"></i></a>
-              </li>
-              <li>
-                <a href="#" title=""><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@TheHoraizons/videos" target="_blank" title=""><i class="fab fa-youtube"></i></a>
               </li>
             </ul>
           </div>
@@ -135,17 +127,20 @@
         <ul>
           <li><a href="index-2.html" title="">Home</a></li>
           <li><a href="about.html" title="">About</a></li>
-          <li><a href="events.html" title="">Events</a></li>
-          <li><a href="event-single.html" title="">Event Single</a></li>
+          <li><a href="about.html" title="">Events</a></li>
+          <li>
+            <a href="admission.html" title="">Admissions</a>
+          </li>
+          <!-- <li><a href="event-single.html" title="">Event Single</a></li>
           <li><a href="schedule.html" title="">Schedule</a></li>
           <li><a href="classes.html" title="">Classes</a></li>
-          <li><a href="class-single.html" title="">Classe Single</a></li>
-          <li><a href="teachers.html" title="">Teachers</a></li>
-          <li><a href="teacher-single.html" title="">Teacher Single</a></li>
+          <li><a href="class-single.html" title="">Classe Single</a></li> -->
+          <!-- <li><a href="teachers.html" title="">Teachers</a></li> -->
+          <!-- <li><a href="teacher-single.html" title="">Teacher Single</a></li>
           <li><a href="blog.html" title="">Blog</a></li>
-          <li><a href="post.html" title="">Blog Single</a></li>
+          <li><a href="post.html" title="">Blog Single</a></li> -->
           <li><a href="contacts.html" title="">Contacts</a></li>
-          <li><a href="error.html" title="">404</a></li>
+          <!-- <li><a href="error.html" title="">404</a></li> -->
         </ul>
       </div>
       <!--responsive-menu end-->
@@ -162,7 +157,12 @@
           <!-- <h2 class="page-titlee">Shelly</h2> -->
         </div>
       </section>
-      <img src="assets/img/class-single-banner.jpg" alt="" class="w-100">
+      <img
+        src="./assets/img/about/about.jpeg"
+        style="filter: brightness(0.8)"
+        alt=""
+        class="w-100"
+      />
       <!--pager-section end-->
       <section class="about-page-content">
         <div class="container">
@@ -199,17 +199,24 @@
               </div>
               <div class="col-lg-6 col-md-6">
                 <div class="act-inffo">
-                  <span>ABOUT US</span>
-                  <h2>Our Mission</h2>
-                  <p>
-                    Praesent rhoncus justo erat, sed sollicitudin arcu malesuada
-                    vel. Etiam scelerisque justo ut purus luctus ullamcorper.
-                    Vivamus vitae elit ligula. Fusce eu rutrum nisl.
+                  <!-- <span>ABOUT US</span> -->
+                  <h2>Our Vision & Mission</h2>
+
+                  <span style="margin-bottom: 20px;font-size: 16px;">Vision</span>
+                  <p style="font-size: 16px;">
+                    To develope in students, a thirst for continuous learning,
+                    to enable them to prepare for future life abd to mould them 
+                    as good citizens who will serve the nation.
                   </p>
-                  <ul>
-                    <li>Etiam ante nisl, maximus vitae sem non, dignissim</li>
-                    <li>Donec blandit, sapien eu porttitor blandit</li>
-                    <li>Sed at urna at massa viverra feugiat non</li>
+                  <span style="margin-bottom: 20px;font-size: 16px;">Mission</span>
+                  <p style="font-size: 16px;">
+                    The Horaizon School & Jr.College puts in practice, various methods 
+                    and uses different means to Inculcate in students,
+                  </p>
+                  <ul> 
+                    <li style="font-size: 16px;"><u>Values</u>: Truth, Honesty, Integrity, Diginity of labour, Motivate them to achieve</li>
+                    <li style="font-size: 16px;"><u>Excellence</u> in academics and sports</li>
+                    <li style="font-size: 16px;"><u>Life Skills</u> to shape the future of our great nation</li>
                   </ul>
                 </div>
                 <!--act-inffo end-->
@@ -220,6 +227,41 @@
         </div>
       </section>
       <!--about-page-content end-->
+
+      <!-- Youtube -->
+      <section class="classes-section" style="margin: 120px 0px 0px 0px;">
+        <div class="container">
+          <div class="sec-title" style="text-align: center;">
+            <h2 class="no-bg">Our Social Presence</h2>
+            <!-- <p>
+              Nam mattis felis id sodales rutrum. Nulla ornare tristique mauris,
+              a laoreet erat ornare sit amet. Nulla sagittis faucibus lacus
+            </p> -->
+          </div>
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ID8Zx-a3HJE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/O5qEHqh5EDk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- Youtube -->
+
       <section class="benifit-section">
         <div class="container">
           <div class="row align-items-center">
@@ -525,6 +567,163 @@
         </div>
       </section>
       <!--classes-section end-->
+
+      <!-- Teachers -->
+      <section class="classes-section">
+        <div class="container">
+          <div class="sec-title">
+            <h2 class="no-bg">Our Classes</h2>
+            <p>
+              Nam mattis felis id sodales rutrum. Nulla ornare tristique mauris,
+              a laoreet erat ornare sit amet. Nulla sagittis faucibus lacus
+            </p>
+          </div>
+          <div class="teachers-section p-0">
+            <div class="teachers">
+              <div class="row">
+                <div
+                  class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth"
+                  style="margin-top: 40px"
+                >
+                  <div class="teacher">
+                    <div class="teacher-img">
+                      <img
+                        src="./assets/img/teachers/principle.png"
+                        alt=""
+                        class="w-100 img-fit"
+                      />
+                    </div>
+                    <div class="teacher-info">
+                      <h3>Katayama Fumiki</h3>
+                      <span>Teacher</span>
+                    </div>
+                  </div>
+                  <!--teacher end-->
+                </div>
+                <div
+                  class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth"
+                  style="margin-top: 40px"
+                >
+                  <div class="teacher">
+                    <div class="teacher-img">
+                      <img
+                        src="./assets/img/teachers/teach1.png"
+                        alt=""
+                        class="w-100 img-fit"
+                      />
+                    </div>
+                    <div class="teacher-info">
+                      <h3>Polina Kerston</h3>
+                      <span>English Teacher</span>
+                    </div>
+                  </div>
+                  <!--teacher end-->
+                </div>
+                <div
+                  class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth"
+                  style="margin-top: 40px"
+                >
+                  <div class="teacher">
+                    <div class="teacher-img">
+                      <img
+                        src="./assets/img/teachers/teach2.png"
+                        alt=""
+                        class="w-100 img-fit"
+                      />
+                    </div>
+                    <div class="teacher-info">
+                      <h3>Faadi Al Rahman</h3>
+                      <span>Instructor</span>
+                    </div>
+                  </div>
+                  <!--teacher end-->
+                </div>
+                <div
+                  class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth"
+                  style="margin-top: 40px"
+                >
+                  <div class="teacher">
+                    <div class="teacher-img">
+                      <img
+                        src="./assets/img/teachers/teach3.png"
+                        alt=""
+                        class="w-100 img-fit"
+                      />
+                    </div>
+                    <div class="teacher-info">
+                      <h3>Chikelu Obasea</h3>
+                      <span>Art Teacher</span>
+                    </div>
+                  </div>
+                  <!--teacher end-->
+                </div>
+                <div
+                  class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth"
+                  style="margin-top: 40px"
+                >
+                  <div class="teacher">
+                    <div class="teacher-img">
+                      <img
+                        src="./assets/img/teachers/teach4.png"
+                        alt=""
+                        class="w-100 img-fit"
+                      />
+                    </div>
+                    <div class="teacher-info">
+                      <h3>Katayama Fumiki</h3>
+                      <span>Teacher</span>
+                    </div>
+                  </div>
+                  <!--teacher end-->
+                </div>
+
+                <div
+                  class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth"
+                  style="margin-top: 40px"
+                >
+                  <div class="teacher">
+                    <div class="teacher-img">
+                      <img
+                        src="./assets/img/teachers/staff.png"
+                        alt=""
+                        class="w-100 img-fit"
+                      />
+                    </div>
+                    <div class="teacher-info">
+                      <h3>Katayama Fumiki</h3>
+                      <span>Teacher</span>
+                    </div>
+                  </div>
+                  <!--teacher end-->
+                </div>
+
+                <div
+                  class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth"
+                  style="margin-top: 40px"
+                >
+                  <div class="teacher">
+                    <div class="teacher-img">
+                      <img
+                        src="./assets/img/teachers/trustee.png"
+                        alt=""
+                        class="w-100 img-fit"
+                      />
+                    </div>
+                    <div class="teacher-info">
+                      <h3>Katayama Fumiki</h3>
+                      <span>Teacher</span>
+                    </div>
+                  </div>
+                  <!--teacher end-->
+                </div>
+              </div>
+            </div>
+            <!--teachers end-->
+          </div>
+        </div>
+      </section>
+      <!-- Teachers -->
+
       <section class="newsletter-section">
         <div class="container">
           <div class="newsletter-sec">
@@ -616,7 +815,7 @@
                       <div class="contact-info">
                         <img src="assets/img/icon2.png" alt="" />
                         <div class="contact-tt">
-                          <h4>Work Time</h4>
+                          <h4>Office Time</h4>
                           <span>Mon - Fri 8 AM - 5 PM</span>
                         </div>
                       </div>
@@ -641,13 +840,10 @@
                   <h3 class="widget-title">Quick Links</h3>
                   <ul>
                     <li><a href="about.html" title="">About Us</a></li>
-                    <li><a href="classes.html" title="">Our Classes</a></li>
                     <li>
-                      <a href="teachers.html" title="">School Teachers</a>
+                      <a href="about.html" title="">School Teachers</a>
                     </li>
-                    <li><a href="events.html" title="">Recent Events</a></li>
-                    <li><a href="blog.html" title="">Our News</a></li>
-                    <li><a href="schedule.html" title="">Schedule</a></li>
+                    <li><a href="about.html" title="">Recent Events</a></li>
                   </ul>
                 </div>
                 <!--widget-links end-->
@@ -658,18 +854,15 @@
           <div class="bottom-footer">
             <div class="row align-items-center">
               <div class="col-lg-6 col-md-6 col-sm-6">
-                <p>© Copyrights 2022 The Horaizon School All rights reserved</p>
+                <p>© Copyrights 2023 The Horaizon School All rights reserved</p>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6">
                 <ul class="social-links">
                   <li>
-                    <a href="#" title=""><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/TheHoraizons" target="_blank" title=""><i class="fab fa-facebook-f"></i></a>
                   </li>
                   <li>
-                    <a href="#" title=""><i class="fab fa-linkedin-in"></i></a>
-                  </li>
-                  <li>
-                    <a href="#" title=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@TheHoraizons/videos" target="_blank" title=""><i class="fab fa-youtube"></i></a>
                   </li>
                 </ul>
               </div>
