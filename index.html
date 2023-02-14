@@ -44,27 +44,30 @@
         color: #fff;
         font-size: 20px;
       }
-      .img-fit{
+      .img-fit {
         aspect-ratio: 3/3;
         object-fit: contain;
       }
-      .teacher{
-        transition: all .3s;
+      .teacher {
+        transition: all 0.3s;
       }
-      .teacher:hover{
+      .teacher:hover {
         transform: scale(1.1);
-        transition: all .3s;
+        transition: all 0.3s;
+      }
+      .highlight-section {
+        margin-top: 60px;
       }
     </style>
   </head>
   <body>
     <div class="wrapper">
       <div class="main-section">
-        <header>
+        <header class="header" id="myHeader">
           <div class="container">
-            <div class="header-content d-flex flex-wrap align-items-center">
+            <div class="header-content d-flex flex-wrap align-items-center header-content-sticky">
               <div class="logo">
-                <a href="index-2.html" title=""
+                <a href="index.html" title=""
                   ><img
                     src="assets/img/logo/logoDemo1.png"
                     alt=""
@@ -118,7 +121,7 @@
               <nav>
                 <ul>
                   <li>
-                    <a class="active" href="index-2.html" title="">Home</a>
+                    <a class="active" href="index.html" title="">Home</a>
                   </li>
                   <li>
                     <a href="about.html" title="">About</a>
@@ -144,10 +147,20 @@
               <!--nav end-->
               <ul class="social-links ml-auto">
                 <li>
-                  <a href="https://www.facebook.com/TheHoraizons" target="_blank" title=""><i class="fab fa-facebook-f"></i></a>
+                  <a
+                    href="https://www.facebook.com/TheHoraizons"
+                    target="_blank"
+                    title=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/@TheHoraizons/videos" target="_blank" title=""><i class="fab fa-youtube"></i></a>
+                  <a
+                    href="https://www.youtube.com/@TheHoraizons/videos"
+                    target="_blank"
+                    title=""
+                    ><i class="fab fa-youtube"></i
+                  ></a>
                 </li>
               </ul>
             </div>
@@ -157,7 +170,7 @@
         <!--header end-->
         <div class="responsive-menu">
           <ul>
-            <li><a href="index-2.html" title="">Home</a></li>
+            <li><a href="index.html" title="">Home</a></li>
             <li><a href="about.html" title="">About</a></li>
             <li><a href="about.html" title="">Events</a></li>
             <li>
@@ -726,6 +739,188 @@
           <!--classes-sec end-->
         </div>
       </section>
+
+      <!-- Highlights -->
+      <section class="about-us-section">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2>Our <span>Highlights</span></h2>
+            <p>
+              Nunc consectetur ex nunc, id porttitor leo semper eget. Vivamus
+              interdum, mauris quis cursus sodales, urn
+            </p>
+          </div>
+          <!--section-title end-->
+          <div class="about-sec">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div
+                    class="abt-col wow fadeInUp"
+                    data-wow-duration="1000ms"
+                    style="
+                      visibility: visible;
+                      animation-duration: 1000ms;
+                      animation-name: E;
+                    "
+                  >
+                    <img src="assets/img/icon5.png" alt="" />
+                    <h3>Science Laboratory</h3>
+                    <p>Vivamus interdum, mauris interdum quis curdum sodales</p>
+                  </div>
+                  <!--abt-col end-->
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div
+                    class="abt-col wow fadeInUp"
+                    data-wow-duration="1000ms"
+                    data-wow-delay="200ms"
+                    style="
+                      visibility: visible;
+                      animation-duration: 1000ms;
+                      animation-delay: 200ms;
+                      animation-name: E;
+                    "
+                  >
+                    <img src="assets/img/icon7.png" alt="" />
+                    <h3>School Library</h3>
+                    <p>
+                      Pelleneget tespharetra que fringilla egugue id eget
+                      pharetra
+                    </p>
+                  </div>
+                  <!--abt-col end-->
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div
+                    class="abt-col wow fadeInUp"
+                    data-wow-duration="1000ms"
+                    data-wow-delay="400ms"
+                    style="
+                      visibility: visible;
+                      animation-duration: 1000ms;
+                      animation-delay: 400ms;
+                      animation-name: E;
+                    "
+                  >
+                    <img src="assets/img/icon8.png" alt="" />
+                    <h3>Computer Lab</h3>
+                    <p>
+                      Etiam risus neque, volutpat vel laoreet a, finibus
+                      volutpat non
+                    </p>
+                  </div>
+                  <!--abt-col end-->
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div
+                    class="abt-col wow fadeInUp"
+                    data-wow-duration="1000ms"
+                    data-wow-delay="600ms"
+                    style="
+                      visibility: visible;
+                      animation-duration: 1000ms;
+                      animation-delay: 600ms;
+                      animation-name: E;
+                    "
+                  >
+                    <img src="assets/img/icon9.png" alt="" />
+                    <h3>School Ground</h3>
+                    <p>
+                      Mauris nec mi fequis ugiat, cursus tortor nec, pharetra
+                      tellus
+                    </p>
+                  </div>
+                  <!--abt-col end-->
+                </div>
+              </div>
+              <div class="row highlight-section">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div
+                    class="abt-col wow fadeInUp"
+                    data-wow-duration="1000ms"
+                    data-wow-delay="600ms"
+                    style="
+                      visibility: visible;
+                      animation-duration: 1000ms;
+                      animation-delay: 600ms;
+                      animation-name: E;
+                    "
+                  >
+                    <img src="assets/img/icon9.png" alt="" />
+                    <h3>Sports Room</h3>
+                    <p>
+                      Mauris nec mi fequis ugiat, cursus tortor nec, pharetra
+                      tellus
+                    </p>
+                  </div>
+                  <!--abt-col end-->
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div
+                    class="abt-col wow fadeInUp"
+                    data-wow-duration="1000ms"
+                    style="
+                      visibility: visible;
+                      animation-duration: 1000ms;
+                      animation-name: E;
+                    "
+                  >
+                    <img src="assets/img/icon5.png" alt="" />
+                    <h3>A/V Room</h3>
+                    <p>Vivamus interdum, mauris interdum quis curdum sodales</p>
+                  </div>
+                  <!--abt-col end-->
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div
+                    class="abt-col wow fadeInUp"
+                    data-wow-duration="1000ms"
+                    data-wow-delay="400ms"
+                    style="
+                      visibility: visible;
+                      animation-duration: 1000ms;
+                      animation-delay: 400ms;
+                      animation-name: E;
+                    "
+                  >
+                    <img src="assets/img/icon8.png" alt="" />
+                    <h3>School Office</h3>
+                    <p>
+                      Etiam risus neque, volutpat vel laoreet a, finibus
+                      volutpat non
+                    </p>
+                  </div>
+                  <!--abt-col end-->
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div
+                    class="abt-col wow fadeInUp"
+                    data-wow-duration="1000ms"
+                    data-wow-delay="200ms"
+                    style="
+                      visibility: visible;
+                      animation-duration: 1000ms;
+                      animation-delay: 200ms;
+                      animation-name: E;
+                    "
+                  >
+                    <img src="assets/img/icon7.png" alt="" />
+                    <h3>Medical Room</h3>
+                    <p>
+                      Pelleneget tespharetra que fringilla egugue id eget
+                      pharetra
+                    </p>
+                  </div>
+                  <!--abt-col end-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Highlights -->
+
       <!--classes-section end-->
       <section class="teachers-section">
         <div class="container">
@@ -743,8 +938,11 @@
               <div class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth">
                 <div class="teacher">
                   <div class="teacher-img">
-                    <img src="./assets/img/teachers/teach1.png" alt="" class="w-100 img-fit" />
-                    
+                    <img
+                      src="./assets/img/teachers/teach1.png"
+                      alt=""
+                      class="w-100 img-fit"
+                    />
                   </div>
                   <div class="teacher-info">
                     <h3>
@@ -758,8 +956,11 @@
               <div class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth">
                 <div class="teacher">
                   <div class="teacher-img">
-                    <img src="./assets/img/teachers/teach2.png" alt="" class="w-100 img-fit" />
-                    
+                    <img
+                      src="./assets/img/teachers/teach2.png"
+                      alt=""
+                      class="w-100 img-fit"
+                    />
                   </div>
                   <div class="teacher-info">
                     <h3>
@@ -773,8 +974,11 @@
               <div class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth">
                 <div class="teacher">
                   <div class="teacher-img">
-                    <img src="./assets/img/teachers/teach3.png" alt="" class="w-100 img-fit" />
-                    
+                    <img
+                      src="./assets/img/teachers/teach3.png"
+                      alt=""
+                      class="w-100 img-fit"
+                    />
                   </div>
                   <div class="teacher-info">
                     <h3>
@@ -788,8 +992,11 @@
               <div class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth">
                 <div class="teacher">
                   <div class="teacher-img">
-                    <img src="./assets/img/teachers/teach4.png" alt="" class="w-100 img-fit" />
-                    
+                    <img
+                      src="./assets/img/teachers/teach4.png"
+                      alt=""
+                      class="w-100 img-fit"
+                    />
                   </div>
                   <div class="teacher-info">
                     <h3>
@@ -799,14 +1006,14 @@
                   </div>
                 </div>
                 <!--teacher end-->
-                
               </div>
-              
             </div>
           </div>
           <!--teachers end-->
           <div class="lnk-dv text-center">
-            <a href="about.html" title="" class="btn-default">Know More <i class="fa fa-long-arrow-alt-right"></i></a>
+            <a href="about.html" title="" class="btn-default"
+              >Know More <i class="fa fa-long-arrow-alt-right"></i
+            ></a>
           </div>
         </div>
       </section>
@@ -932,7 +1139,7 @@
               </div>
               <!--courses-list end-->
               <a href="about.html" title="" class="all-btn"
-                >All Events <i class="fa fa-long-arrow-alt-right"></i
+                >All Courses <i class="fa fa-long-arrow-alt-right"></i
               ></a>
               <div class="clearfix"></div>
             </div>
@@ -1189,10 +1396,20 @@
               <div class="col-lg-6 col-md-6 col-sm-6">
                 <ul class="social-links">
                   <li>
-                    <a href="https://www.facebook.com/TheHoraizons" target="_blank" title=""><i class="fab fa-facebook-f"></i></a>
+                    <a
+                      href="https://www.facebook.com/TheHoraizons"
+                      target="_blank"
+                      title=""
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
                   </li>
                   <li>
-                    <a href="https://www.youtube.com/@TheHoraizons/videos" target="_blank" title=""><i class="fab fa-youtube"></i></a>
+                    <a
+                      href="https://www.youtube.com/@TheHoraizons/videos"
+                      target="_blank"
+                      title=""
+                      ><i class="fab fa-youtube"></i
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -1217,6 +1434,22 @@
       }
       gtag("js", new Date());
       gtag("config", "UA-180910402-1");
+    </script>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
     </script>
   </body>
 </html>

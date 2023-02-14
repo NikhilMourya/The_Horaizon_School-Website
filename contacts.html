@@ -14,11 +14,11 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header class="header" id="myHeader">
         <div class="container">
-          <div class="header-content d-flex flex-wrap align-items-center">
+          <div class="header-content d-flex flex-wrap align-items-center header-content-sticky">
             <div class="logo">
-              <a href="index-2.html" title=""
+              <a href="index.html" title=""
                 ><img
                   src="assets/img/logo/logoDemo1.png"
                   alt=""
@@ -72,7 +72,7 @@
             <nav>
               <ul>
                 <li>
-                  <a href="index-2.html" title="">Home</a>
+                  <a href="index.html" title="">Home</a>
                 </li>
                 <li>
                   <a href="about.html" title="">About</a>
@@ -102,7 +102,7 @@
       <!--header end-->
       <div class="responsive-menu">
         <ul>
-          <li><a href="index-2.html" title="">Home</a></li>
+          <li><a href="index.html" title="">Home</a></li>
           <li><a href="about.html" title="">About</a></li>
           <li><a href="about.html" title="">Events</a></li>
           <li>
@@ -126,7 +126,7 @@
           <div class="pager-content text-center">
             <h2>Contacts</h2>
             <ul>
-              <li><a href="#" title="">Home</a></li>
+              <li><a href="index.html" title="">Home</a></li>
               <li><span>Contacts</span></li>
             </ul>
           </div>
@@ -410,6 +410,19 @@
       gtag("js", new Date());
       gtag("config", "UA-180910402-1");
     </script>
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+      </script>
   </body>
-  <!-- Mirrored from html.merku.love/shelly/contacts.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Nov 2022 07:37:15 GMT -->
 </html>

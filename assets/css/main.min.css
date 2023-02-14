@@ -16766,7 +16766,7 @@ footer .bottom-footer .social-links {
 }
 .classes-page .classes-banner {
   /* background-image: url(../img/classes-banner.jpg); */
-  background-image: url('../img/admission/admission.jpeg');
+  background-image: url("../img/admission/admission.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -18570,12 +18570,54 @@ footer .bottom-footer .social-links {
 .schedule-mobile-content .ttb-list > ul li:nth-child(2n) .dd-info {
   background: linear-gradient(180deg, #159957, #155799);
 }
-.align-center-photo{
+.align-center-photo {
   text-align: center;
 }
-.img-width-gallery{
+.img-width-gallery {
   width: 300px;
   border-radius: 6px;
+}
+.teacher{
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+.teacher:hover {
+  transition: all 0.3s ease-out;
+  padding: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 2;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  transition: all 0.3s ease-out;
+}
+.sticky .header-content-sticky {
+  transition: all 0.3s ease-out;
+  display: none !important;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.youtube-frame {
+  width: 560px;
+  height: 315px;
+}
+
+@media (max-width: 1154px) {
+  .youtube-frame {
+    width: auto;
+    height: auto;
+  }
+  .youtube-frame-div{
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 1366px) {
